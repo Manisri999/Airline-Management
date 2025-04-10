@@ -1,4 +1,4 @@
-.manage-flights {
+/* .manage-flights {
     background: linear-gradient(135deg, #9b6032, #8e4b6e);
     min-height: 100vh;
     padding: 20px;
@@ -25,4 +25,72 @@
     padding: 15px;
     border-radius: 8px;
     text-align: center;
+  } */
+
+
+  .manage-flights {
+    background: linear-gradient(135deg, #9b6032, #8e4b6e);
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .flight-form {
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .flights-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .flight-card {
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .message {
+    background: #e6ffe6;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .flight-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #212529;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  .edit-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
   }

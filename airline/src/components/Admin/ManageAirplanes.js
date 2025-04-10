@@ -12,6 +12,7 @@ function ManageAirplanes() {
     registration: "",
   });
   const [message, setMessage] = useState("");
+ 
 
   const handleAddAirplane = () => {
     if (!newAirplane.model || !newAirplane.manufacturer) {

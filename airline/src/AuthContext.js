@@ -1,27 +1,4 @@
-// import React, { createContext, useContext, useState } from "react";
 
-// const AuthContext = createContext();
-
-// export function AuthProvider({ children }) {
-//   const [isLoggedIn, setIsLoggedIn] = useState(false);
-//   const [isAdmin, setIsAdmin] = useState(false);
-//   const [loggedInUser, setLoggedInUser] = useState(null);
-
-//   const logout = () => {
-//     setIsLoggedIn(false);
-//     setIsAdmin(false);
-//     setLoggedInUser(null); // Clear loggedInUser on logout
-//     localStorage.clear(); // Clear any stored data
-//   };
-
-//   return (
-//     <AuthContext.Provider value={{ isLoggedIn, setIsLoggedIn, isAdmin, setIsAdmin, loggedInUser, setLoggedInUser, logout }}>
-//       {children}
-//     </AuthContext.Provider>
-//   );
-// }
-
-// export const useAuth = () => useContext(AuthContext);
 
 
 import React, { createContext, useContext, useState, useEffect } from "react";
