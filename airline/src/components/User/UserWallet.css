@@ -1,0 +1,33 @@
+.user-wallet {
+    background: linear-gradient(135deg, #9b6032, #8e4b6e);
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .wallet-card {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .payment-form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .transaction-history {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .message {
+    background: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #155724;
+  }

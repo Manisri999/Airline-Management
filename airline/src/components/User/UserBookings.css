@@ -1,0 +1,50 @@
+/* .user-bookings {
+  background: linear-gradient(135deg, #9b6032, #8e4b6e);
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.bookings-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.booking-card {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.no-bookings {
+  background: #fff3f3;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+} */
+
+
+.user-bookings {
+  background: linear-gradient(135deg, #9b6032, #8e4b6e);
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.bookings-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.booking-card {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.no-bookings {
+  background: #fff3f3;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}

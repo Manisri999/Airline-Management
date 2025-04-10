@@ -1,0 +1,49 @@
+
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #e6ceb4 !important; /* Lighter beige-brown */
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f5f1e9 !important; /* Even lighter on hover */
+}
+
+.user-profile {
+    min-height: 100vh; /* Ensures the container takes full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    background: linear-gradient(135deg, #9b6032, #8e4b6e); /* Gradient background for the whole page */
+}
+
+.profile-card {
+    background: #eadada; /* Plain white background for the card */
+    color: #6f4e37; /* Coffee-brown text for contrast against white */
+    border-radius: 15px;
+    border: 1px solid rgba(111, 78, 55, 0.2);
+    width: 100%; /* Ensures it fits within the container */
+    max-width: 500px; /* Limits width for readability */
+}
+
+.qatar-title {
+    color: #d8b9b9; /* Matches the profile card text color */
+    margin-bottom: 20px;
+}
+
+/* Ensure Bootstrap button styling aligns with your theme */
+.btn-coffee {
+    background-color: #6f4e37;
+    color: #f5f1e9;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-coffee:hover {
+    background-color: #5a3f2d;
+    transform: scale(1.05);
+}

@@ -1,0 +1,28 @@
+.manage-flights {
+    background: linear-gradient(135deg, #9b6032, #8e4b6e);
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .flight-form {
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .flights-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .flight-card {
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .message {
+    background: #e6ffe6;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }

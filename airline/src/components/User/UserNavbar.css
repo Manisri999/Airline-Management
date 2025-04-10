@@ -1,0 +1,11 @@
+
+  
+    .navbar-dark .navbar-nav .nav-link {
+        color: #d8bda6 !important; /* Darker brown for better visibility against dark background */
+        padding: 10px 15px;
+        transition: color 0.3s;
+      }
+      
+      .navbar-dark .navbar-nav .nav-link:hover {
+        color: #3d1c04 !important; /* Medium-dark brown on hover */
+      }

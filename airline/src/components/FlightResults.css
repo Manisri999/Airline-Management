@@ -1,0 +1,386 @@
+ /* .flight-results {
+   
+    background-size: cover;
+    color: #3e2f23;
+    font-family: 'Georgia', serif;
+  }
+  
+  .results-grid {
+    margin-top: 20px;
+  }
+  
+  .flight-card {
+    background: rgba(245, 241, 233, 0.9);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .flight-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .passenger-inputs, .seat-selection {
+    margin-top: 15px;
+  }
+  
+  .btn-coffee {
+    background-color: #6f4e37;
+    color: #f5f1e9;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.1rem;
+  }
+  
+  .btn-coffee:hover {
+    background-color: #5a3f2d;
+    transform: scale(1.05);
+  }
+  
+  .payment-section {
+    background: rgba(245, 241, 233, 0.8);
+    border-radius: 12px;
+    padding: 25px;
+  }
+  
+  .bg-coffee-light {
+    background-color: #d9c2a8;
+  }
+  
+  .success-message {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .text-coffee-dark {
+    color: #3e2f23;
+  }
+  
+  @media (max-width: 768px) {
+    .results-grid {
+      grid-template-columns: 1fr; 
+    }
+    .passenger-inputs {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .col-auto {
+      width: 100%;
+    }
+  }
+
+  .seat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .seat-btn {
+    padding: 10px;
+    border: 1px solid #6f4e37;
+    background-color: #f5f1e9;
+    color: #6f4e37;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .seat-btn.selected {
+    background-color: #6f4e37;
+    color: #f5f1e9;
+  }
+  
+  .seat-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+
+.booking-status {
+    padding: 15px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    color: #721c24;
+  }
+  
+  .booking-status a {
+    color: #721c24;
+    text-decoration: underline;
+  }  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .flight-results {
+    background-size: cover;
+    color: #3e2f23;
+    font-family: 'Georgia', serif;
+  }
+  
+  .results-grid {
+    margin-top: 20px;
+  }
+  
+  .flight-card {
+    background: rgba(245, 241, 233, 0.9);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .flight-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .passenger-inputs, .seat-selection {
+    margin-top: 15px;
+  }
+  
+  .btn-coffee {
+    background-color: #6f4e37;
+    color: #f5f1e9;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.1rem;
+  }
+  
+  .btn-coffee:hover {
+    background-color: #5a3f2d;
+    transform: scale(1.05);
+  }
+  
+  .payment-section {
+    background: rgba(245, 241, 233, 0.8);
+    border-radius: 12px;
+    padding: 25px;
+  }
+  
+  .bg-coffee-light {
+    background-color: #d9c2a8;
+  }
+  
+  .success-message {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .text-coffee-dark {
+    color: #3e2f23;
+  }
+  
+  @media (max-width: 768px) {
+    .results-grid {
+      grid-template-columns: 1fr;
+    }
+    .passenger-inputs {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .col-auto {
+      width: 100%;
+    }
+  }
+  
+  
+  .seat-grid {
+    display: flex; 
+    overflow-x: auto; 
+    gap: 5px;
+    margin-top: 10px;
+    padding-bottom: 10px; 
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: thin; 
+    scrollbar-color: #6f4e37 #f5f1e9; 
+  }
+  
+ 
+  .seat-grid::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .seat-grid::-webkit-scrollbar-track {
+    background: #f5f1e9;
+  }
+  
+  .seat-grid::-webkit-scrollbar-thumb {
+    background: #6f4e37;
+    border-radius: 4px;
+  }
+  
+  .seat-btn {
+    padding: 10px;
+    border: 1px solid #6f4e37;
+    background-color: #f5f1e9;
+    color: #6f4e37;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 50px; 
+    flex-shrink: 0; 
+  }
+  
+  .seat-btn.selected {
+    background-color: #6f4e37;
+    color: #f5f1e9;
+  }
+  
+  .seat-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  
+  .passenger-names {
+    margin-top: 15px;
+  }
+  
+  .passenger-names label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3e2f23;
+  }
+  
+  .booking-status {
+    padding: 15px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    color: #721c24;
+  }
+  
+  .booking-status a {
+    color: #721c24;
+    text-decoration: underline;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* .seat-map {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    max-height: 200px; 
+    overflow-y: auto; 
+  }
+  
+  .seat-row {
+    display: flex;
+    gap: 5px;
+    justify-content: center; 
+  }
+  
+  .seat-btn {
+    padding: 8px 12px;
+    border: 1px solid #6f4e37;
+    background-color: #f5f1e9;
+    color: #6f4e37;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center;
+  }
+  
+  .seat-btn.selected {
+    background-color: #6f4e37;
+    color: #f5f1e9;
+  }
+  
+  .seat-btn.booked {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+  
+  .seat-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  } */
+
+
+
+
+
+
+
+
+
+/* Add to existing FlightResults.css */
+.seat-map {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    max-height: 200px; /* Limits height, adjust as needed */
+    overflow-y: auto; /* Vertical scroll if needed */
+}
+
+.seat-row {
+    display: flex;
+    gap: 5px;
+    justify-content: center; /* Center seats in row */
+    position: relative;
+}
+
+.seat-row::after {
+    content: ""; /* Represents the aisle */
+    position: absolute;
+    width: 20px; /* Width of the aisle */
+    height: 100%;
+    left: calc(50% - 10px); /* Center the aisle */
+    background: transparent; /* No background, just spacing */
+}
+
+.seat-btn {
+    padding: 8px 12px;
+    border: 1px solid #6f4e37;
+    background-color: #f5f1e9;
+    color: #6f4e37;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center;
+}
+
+.seat-btn.selected {
+    background-color: #6f4e37;
+    color: #f5f1e9;
+}
+
+.seat-btn.booked {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.seat-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

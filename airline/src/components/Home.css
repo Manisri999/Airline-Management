@@ -1,0 +1,124 @@
+ .home-wrapper {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Georgia', serif;
+}
+
+.home-header {
+  position: relative;
+  height: 100vh;
+}
+
+.slideshow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.search-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.glass-effect {
+  background: rgba(245, 241, 233, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(111, 78, 55, 0.2);
+}
+
+.welcome-text {
+  color: #f5f1e9;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.search-form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text-coffee-dark {
+  color: #3e2f23;
+  font-weight: bold;
+}
+
+.btn-coffee {
+  background-color: #6f4e37;
+  color: #f5f1e9;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1.1rem;
+}
+
+.btn-coffee:hover {
+  background-color: #5a3f2d;
+  transform: scale(1.05);
+}
+
+.bg-coffee-dark {
+  background-color: #3e2f23;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links a {
+  color: #d9c2a8;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #f5f1e9;
+}
+
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .col-auto {
+    width: 100%;
+  }
+  .welcome-text {
+    font-size: 1.8rem;
+  }
+} 

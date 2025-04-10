@@ -1,0 +1,21 @@
+.manage-airports {
+    background: linear-gradient(135deg, #9b6032, #8e4b6e);
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .airport-form {
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .airports-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .airport-card {
+    background: #fff;
+    border-radius: 8px;
+  }
