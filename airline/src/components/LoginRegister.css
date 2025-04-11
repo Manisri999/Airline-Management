@@ -1,7 +1,7 @@
 
 
 
- .login-register-container {
+ /* .login-register-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,4 +55,117 @@
   transform: scale(1.05);
 } 
 
+ */
 
+
+
+
+
+
+
+ .login-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("C:\\Airline Management\\airline\\public\\images\\image2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-box {
+  background: rgba(235, 216, 179, 0.3) !important; 
+  border: 1px solid rgba(245, 241, 233, 0.2); 
+  backdrop-filter: blur(10px); 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Original width for login */
+}
+
+.signup-box {
+  background: rgba(235, 216, 179, 0.3) !important; 
+  border: 1px solid rgba(245, 241, 233, 0.2); 
+  backdrop-filter: blur(10px); 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px; /* Wider for signup grid */
+}
+
+.bg-coffee-light {
+  background-color: #d9c2a8;
+}
+
+.message-text {
+  color: #6f4e37;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.text-coffee-dark {
+  color: #3e2f23;
+}
+
+.form-control {
+  background-color: rgba(245, 241, 233, 0.5);
+  border: 1px solid #6f4e37;
+}
+
+.btn-coffee {
+  background-color: #a96d42;
+  color: #f5f1e9;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%; /* Full width button */
+}
+
+.btn-coffee:hover {
+  background-color: #583117;
+  transform: scale(1.05);
+}
+
+.signup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between fields */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  color: #3e2f23;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .signup-box {
+    max-width: 400px; /* Single column on mobile */
+  }
+  
+  .signup-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+}

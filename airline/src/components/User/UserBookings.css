@@ -35,11 +35,32 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 20px; /* Adds spacing below the header */
 }
 
 .booking-card {
   background: #fff;
   border-radius: 8px;
+  color: #333; /* Better contrast for text inside white cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 15px; /* Inner padding for content */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.booking-card:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.booking-card h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #9b6032; /* Matches your gradient theme */
+}
+
+.booking-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0; /* Removes default margin for tighter spacing */
 }
 
 .no-bookings {
@@ -47,4 +68,18 @@
   padding: 20px;
   border-radius: 8px;
   text-align: center;
+  color: #dc3545; /* Reddish tone for emphasis */
+  font-size: 18px;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-top: 10px; /* Space above button */
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
 }

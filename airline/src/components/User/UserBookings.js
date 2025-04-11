@@ -23,16 +23,24 @@ function UserBookings() {
               <div className="card-body">
                 <h5>{booking.flightNumber} - {booking.airline}</h5>
                 <p>
-                  Route: {booking.departure} → {booking.arrival}<br />
-                  Date: {booking.date}<br />
-                  Time: {booking.departureTime} - {booking.arrivalTime} ({booking.duration})<br />
-                  Class: {booking.class}<br />
-                  Passengers: Adults: {booking.passengers.adults}, Kids: {booking.passengers.kids}, Disabled: {booking.passengers.disabled}<br />
-                  Passenger Names: {booking.passengerNames.join(", ")}<br />
-                  Seats: {booking.seats}<br />
-                  Total Fare: ₹{booking.price}
+                  <strong>Route:</strong> {booking.departure} → {booking.arrival}<br />
+                  <strong>Date:</strong> {booking.date}<br />
+                  <strong>Time:</strong> {booking.departureTime} - {booking.arrivalTime} (
+                  {booking.duration})<br />
+                  <strong>Class:</strong> {booking.class}<br />
+                  <strong>Passengers:</strong> Adults: {booking.passengers.adults}, Kids:{" "}
+                  {booking.passengers.kids}, Disabled: {booking.passengers.disabled}<br />
+                  <strong>Passenger Names:</strong>{" "}
+                  {booking.passengerNames && Array.isArray(booking.passengerNames)
+                    ? booking.passengerNames.join(", ")
+                    : "N/A"}<br />
+                  <strong>Seats:</strong> {booking.seats || "N/A"}<br />
+                  <strong>Total Fare:</strong> ₹{booking.price}
                 </p>
-                <button className="btn btn-danger btn-sm" onClick={() => handleCancel(booking.id)}>
+                <button
+                  className="btn btn-danger btn-sm"
+                  onClick={() => handleCancel(booking.id)}
+                >
                   Cancel Booking
                 </button>
               </div>
